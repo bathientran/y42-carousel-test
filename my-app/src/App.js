@@ -1,7 +1,5 @@
 import './App.css';
-import LeftTitle from './components/leftTitle/leftTitle'
-import InteractiveSection from './components/interactiveSection/interactiveSection';
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function App() {
   const personas = [
@@ -13,7 +11,6 @@ function App() {
     'data analyst',
 ]
   const [personasState, setPersonasState] = useState(0)
-  const [persona, setPersona] = useState(personas[personasState]);
 
   useEffect(() => {
     let timeout = setTimeout(() => setPersonasState((personasState + 1)%(personas.length)), 1800);
