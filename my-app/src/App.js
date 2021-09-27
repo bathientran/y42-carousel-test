@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 function App() {
   const personas = [
     'anyone',
-    'business analyst',
-    'data scientist',
+    'business analysts',
+    'data scientists',
     'performance marketeers',
     'you'
 ]
@@ -25,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div style={{fontSize: 28, fontWeight: 800, width: 500}}>
+        <div style={{fontSize: 28, fontWeight: 800, width: 450}}>
         The scalable data platform that{' '}
         <span style={{color: '#6bedd4'}}>{personas[personasState]}</span> can run.
         </div>  
