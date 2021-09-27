@@ -4,12 +4,10 @@ import React, { useState, useEffect } from 'react';
 function App() {
   const personas = [
     'anyone',
-    'software engineers',
+    'business analyst',
     'data scientist',
     'performance marketeers',
-    'data engineers',
-    'financial analysts',
-    'data analyst',
+    'you'
 ]
   const [personasState, setPersonasState] = useState(0)
 
