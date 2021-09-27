@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 function App() {
   const personas = [
+    'anyone',
     'software engineers',
     'data scientist',
     'performance marketeers',
@@ -24,7 +25,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div style={{fontSize: 28, fontWeight: 800, width: 500}}>
-        The first scalable data platform that{' '}
+        The scalable data platform that{' '}
         <span style={{color: '#6bedd4'}}>{personas[personasState]}</span> can run.
         </div>  
       </header>
