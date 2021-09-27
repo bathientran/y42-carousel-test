@@ -12,7 +12,10 @@ function App() {
   const [personasState, setPersonasState] = useState(0)
 
   useEffect(() => {
-    let timeout = setTimeout(() => setPersonasState((personasState + 1)%(personas.length)), 1800);
+    let timeout
+    if (personasState !== personas.length -1) {
+      timeout = setTimeout(() => setPersonasState((personasState + 1)%(personas.length)), 1800);
+    }
 
     return () => {
       clearTimeout(timeout);
